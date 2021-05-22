@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <title>Cursor</title>
+    <script>
+        $(document).ready(function(){
+            $("#fot1").hover(function(){
+                $(".pic1").attr("src","media/dos.png");
+            } , function() {
+                $(".pic1").attr("src","media/uno.jpg");
+            });
+            $("#fot2").hover(function(){
+                $(".pic2").attr("src","media/dos.png");
+            } , function() {
+                $(".pic2").attr("src","media/uno.jpg");
+            });
+            $("#fot3").hover(function(){
+                $(".pic3").attr("src","media/dos.png");
+            } , function() {
+                $(".pic3").attr("src","media/uno.jpg");
+            });
+            $("#fot4").hover(function(){
+                $(".pic4").attr("src","media/dos.png");
+            } , function() {
+                $(".pic4").attr("src","media/uno.jpg");
+            });
+        });
+    </script>
+</head>
+<body>
+    <div class="container" id="container">
+        <script>
+            var string ="";
+            for(var i=1; i<5; i++){
+                string = string + '<img class="pic'+i+'" id="fot'+i+'" src="media/uno.jpg">';
+            }
+            document.getElementById("container").innerHTML = string;
+        </script>
+    </div>
+</body>
+</html>

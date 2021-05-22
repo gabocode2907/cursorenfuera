@@ -1,0 +1,33 @@
+.container{
+    height: 500px;
+    width: 500px;
+    margin: 0px auto;
+}
+
+    .container .pic1 {
+        height: 100px;
+        width: 100px;
+        display: inline-block;
+        border: solid black;
+    }
+
+    .container .pic2 {
+        height: 100px;
+        width: 100px;
+        display: inline-block;
+        border: solid black;
+    }
+
+    .container .pic3 {
+        height: 100px;
+        width: 100px;
+        display: inline-block;
+        border: solid black;
+    }
+
+    .container .pic4 {
+        height: 100px;
+        width: 100px;
+        display: inline-block;
+        border: solid black;
+    }
